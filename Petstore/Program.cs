@@ -20,7 +20,6 @@ namespace Petstore
             if (pets == null || pets.Length <= 0)
             {
                 Console.WriteLine("No available pets");
-                Console.Read();
                 return;
             }
 
@@ -36,8 +35,6 @@ namespace Petstore
                 foreach (var pet in category.Pets)
                     Console.WriteLine(pet.Name == null ? string.Empty : @pet.Name);
             }
-
-            Console.Read();
         }
     }
 }
